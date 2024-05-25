@@ -29,7 +29,7 @@ const header = () => {
     <span className={`w-10 h-1 bg-black rounded-8 ${isopen ? 'hidden ease-in-out duration-300' : ''} ease-in-out duration-300`}></span>
     <span className={`w-10 h-1 bg-black rounded-8 transform ${isopen ? 'absolute top-4 rotate-[-45deg]' : ''} ease-in-out duration-300`}></span>
 </button>
-<ul className={`h-screen w-[50%] flex flex-col justify-start items-center absolute top-16 lg:hidden ${isopen ? 'translate-x-[90%]' : 'translate-x-[300%]'} ease-in-out duration-300`}>
+<ul className={`h-screen w-[50%] flex flex-col justify-start items-center font-mono font-semibold text-lg absolute top-16 lg:hidden ${isopen ? 'translate-x-[90%]' : 'translate-x-[300%]'} ease-in-out duration-300`}>
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Games</a></li>
