@@ -1,10 +1,13 @@
 import React from 'react'
 import Category from './category'
 import { title } from 'process'
-import category from './category'
-
+type Category = {
+    title:string,
+    description:string,
+    icon:string
+}
 const Games = () => {
-    const mockdata = [
+    const mockdata : Category[] = [
         {
             title:"Action",
             description:"Action games are a video game genre that emphasizes physical chall.",
