@@ -9,9 +9,50 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		keyframes: {
+			floatInCircle1: {
+			  '0%': { transform: 'translate(0, -50px)' },
+			  '25%': { transform: 'translate(50px, 0)' },
+			  '50%': { transform: 'translate(0, 50px)' },
+			  '75%': { transform: 'translate(-50px, 0)' },
+			  '100%': { transform: 'translate(0, -50px)' },
+			},
+			floatInCircle2: {
+			  '0%': { transform: 'translate(0, -40px)' },
+			  '25%': { transform: 'translate(40px, 0)' },
+			  '50%': { transform: 'translate(0, 40px)' },
+			  '75%': { transform: 'translate(-40px, 0)' },
+			  '100%': { transform: 'translate(0, -40px)' },
+			},
+			floatInCircle3: {
+			  '0%': { transform: 'translate(0, -30px)' },
+			  '25%': { transform: 'translate(30px, 0)' },
+			  '50%': { transform: 'translate(0, 30px)' },
+			  '75%': { transform: 'translate(-30px, 0)' },
+			  '100%': { transform: 'translate(0, -30px)' },
+			},
+		  },
+		  animation: {
+			floatInCircle1: 'floatInCircle1 5s linear infinite',
+			floatInCircle2: 'floatInCircle2 6s linear infinite',
+			floatInCircle3: 'floatInCircle3 7s linear infinite',
+		  },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        mono: ['Roboto Mono', 'monospace'],
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+        red: {
+          DEFAULT: '#BC4A4A', // Use the hex color code
+        },
+        blue: {
+          DEFAULT: '#1E699E', // Use the hex color code
+        },
+        gray: {
+          DEFAULT: '#D9D9D9', // Use the hex color code
+        },
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
