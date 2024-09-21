@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Nav = () => {
+  const sections =['Home', 'Games', 'About', 'Contact']
   const [activeIndex, setActiveIndex] = useState<number>(0);
    const Xvalues=["0","150","300","450"]
   const handleNav = (index: number) => {
@@ -19,7 +20,7 @@ const Nav = () => {
           }}
         ></li>
 
-        {['Home', 'Games', 'About', 'Contact'].map((item, index) => (
+        {sections.map((item, index) => (
           <li
             key={index}
             onClick={() => handleNav(index)}

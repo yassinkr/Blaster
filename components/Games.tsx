@@ -1,6 +1,6 @@
 import React from 'react'
 import Category from './category'
-import { title } from 'process'
+import "./category.css"
 type Category = {
     title:string,
     description:string,
@@ -24,11 +24,12 @@ const Games = () => {
     ]
   return (
     <section className='w-full h-screen bg-black flex justify-center items-center' id='Games'>
-      <div className='w-[80%] h-[70%] flex justify-around items-center flex-col'>
+      <div className='w-[80%] h-[70%] grid-parent'>
 
       {mockdata.map((category,index)=>
-      <Category category={category} key={index}/>
-    )}
+     <div className={`w-full h-1/3 relative `}  key={index}>
+     <Category category={category} index={index}/>
+    </div>)}
         
     </div>
     </section>
