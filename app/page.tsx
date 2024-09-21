@@ -1,3 +1,4 @@
+import Contact from '@/components/Contact'
 import Contribute from '@/components/Contribute'
 import Games from '@/components/Games'
 import Header from '@/components/Header'
@@ -11,6 +12,7 @@ const page = () => {
      <Hero/>
      <Games/>
      <Contribute/>
+     <Contact/>
     </div>
   )
 }

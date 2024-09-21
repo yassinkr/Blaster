@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import React, { useState } from 'react';
-
+import "./category.css"
 const Nav = () => {
   const sections =['Home', 'Games', 'About', 'Contact']
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -12,9 +12,9 @@ const Nav = () => {
 
   return (
     <nav className="relative text-black font-normal">
-      <ul className="flex justify-center w-[550px] items-end  gap-[50px] mt-4 relative overflow-hidden">
-        <li
-          className="absolute h-full w-[100px] bg-black bottom-0 rounded-t-xl left-0 transition-transform duration-300"
+      <ul className="hidden md:flex justify-center w-[550px] items-start md:items-end  gap-[50px] mt-4 relative overflow-hidden">
+        <li 
+          className="absolute h-full w-[100px] bg-black bottom-0 rounded-t-xl left-0 transition-transform duration-300 black-nav-block"
           style={{
             transform: `translateX(${Xvalues[activeIndex]}%)`,
           }}
