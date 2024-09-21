@@ -10,9 +10,9 @@ const Contact = () => {
             <Logo/>
             <div className='flex flex-col justify-start w-1/2 md:w-1/3 h-fit text-white font-mono '>
     <p className='text-[16px] font-sans font-semibold w-full whitespace-nowrap'>To Remember The Old Times</p>
-    <h1 className='text-[32px] w-full whitespace-nowrap'>send us your feedback  </h1>
-    <h1 className='text-[32px] w-full whitespace-nowrap'>you will make blaster better </h1>
-    <h1 className='text-[32px] w-full whitespace-nowrap'>we appreciate every contribution  </h1>
+    <h1 className='text-[32px] w-full md:whitespace-nowrap'>send us your feedback  </h1>
+    <h1 className='text-[32px] w-full md:whitespace-nowrap'>you will make blaster better </h1>
+    <h1 className='text-[32px] w-full md:whitespace-nowrap'>we appreciate every contribution  </h1>
     </div>
          </div>
         <Form/>

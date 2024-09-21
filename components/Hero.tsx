@@ -12,7 +12,7 @@ const Hero = () => {
     <h1 className='text-[32px]'>Nostalgie , Fun , Smoothness</h1>
     <Button className='w-1/5 mt-5'>Explore</Button>
     </div>
-    <div className='w-full md:w-1/3 flex justify-center items-center'>
+    <div className='w-[70%] md:w-1/3 flex justify-center items-center'>
     <img src='/Saly-38.svg' alt='hero' />
     </div>
     </div>
