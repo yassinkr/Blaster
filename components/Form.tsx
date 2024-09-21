@@ -28,35 +28,38 @@ const Form = () => {
   };
 
   return (
-    <div className="h-1/2 w-1/4 p-4  shadow-lg rounded-lg">
+    <div className="h-1/2 w-1/3 p-4  shadow-lg rounded-lg">
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-4">
-        <div>
+        <div className='flex  flex-col justify-start items-start gap-3'>
+          <div className='flex justify-between items-center w-full'>
           <label htmlFor="name" className="font-semibold">Name</label>
           <input
             id="name"
             type="text"
             {...register('name')}placeholder='Blaster OG'
-            className="rounded-xl h-10 p-2 border text-black focus:outline-none focus:ring"
-          />
+            className="rounded-xl h-10 p-2 border text-black focus:outline-none focus:ring w-56"
+          /></div>
           {errors.name && <p className="text-red-500">{errors.name.message}</p>}
         </div>
-        <div>
+        <div className='flex  flex-col justify-start items-start gap-3'>
+        <div className='flex justify-between items-center w-full'>
           <label htmlFor="email" className="font-semibold">Email</label>
           <input
             id="email"
             type="email"
             {...register('email')}placeholder='example@blaster.com'
-            className="rounded-xl h-10 p-2 border text-black focus:outline-none focus:ring"
-          />
+            className="rounded-xl h-10 p-2 border text-black focus:outline-none focus:ring w-56"
+          /></div>
           {errors.email && <p className="text-red-500">{errors.email.message}</p>}
         </div>
-        <div>
+        <div className='flex  flex-col justify-start items-start gap-3'>
+        <div className='flex justify-between items-center w-full'>
           <label htmlFor="message" className="font-semibold">Message</label>
           <textarea
             id="message"
             {...register('message')} placeholder='Dear Blaster Team,'
-            className="rounded-xl h-20 p-2 border text-black focus:outline-none focus:ring"
-          />
+            className="rounded-xl h-20 p-2 border text-black focus:outline-none focus:ring w-56"
+          /></div>
           {errors.message && <p className="text-red-500">{errors.message.message}</p>}
         </div>
         <div>
