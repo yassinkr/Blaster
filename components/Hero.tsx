@@ -9,7 +9,7 @@ const Hero = () => {
     <p className='text-xs md:text-[16px] font-sans font-semibold'>To Remember The Old Times</p>
     <h1 className='text-xl md:text-[32px] text-red'>Blaster </h1>
     <h1 className='text-xl md:text-[32px]'>Unlimited Adventure</h1>
-    <h1 className='text-xl md:text-[32px]'>Nostalgie,Fun,Smoothness</h1>
+    <h1 className='text-xl md:text-[32px]'>Nostalgie ,Fun ,Smoothness</h1>
     <Button className='w-1/2 md:w-1/5 mt-5'>Explore</Button>
     </div>
     <div className='w-[70%] md:w-1/3 flex justify-center items-center'>
