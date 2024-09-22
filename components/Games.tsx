@@ -27,7 +27,7 @@ const Games = () => {
       <div className='w-[80%] h-[90%] grid-parent'>
 
       {mockdata.map((category,index)=>
-     <div className={`w-full relative `}  key={index}>
+     <div className={`w-full md:relative `}  key={index}>
      <Category category={category} index={index}/>
     </div>)}
         

@@ -11,10 +11,10 @@ const category = ({category ,index}:{category :Category , index : number}) => {
     
     
   return (
-    <div className={`flex justify-center items-center md:gap-10 w-full md:w-[350px] h-[140px] px-3 py-5 rounded-xl bg-white ${animate} ${index % 2 === 0 ? "md:left-10": "md:right-10" }`}>
+    <div className={`flex justify-center items-center gap-5 md:gap-10 w-fit md:w-[350px] h-[140px] px-3 py-5 rounded-xl bg-white ${animate} ${index % 2 === 0 ? "md:left-10": "md:right-10" }`}>
    
 
-        <div className='rounded-full bg-gray w-[100px] h-[100px] flex justify-center items-center p-2'>
+        <div className='rounded-full bg-gray w-[50px] h-[50px] md:w-[100px] md:h-[100px] flex justify-center items-center p-2'>
             <img src={category.icon} alt={category.title}/>
         </div>
         <div className='flex flex-col justify-center items-start w-[200px] text-black font-mono' >

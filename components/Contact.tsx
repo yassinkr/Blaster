@@ -5,7 +5,7 @@ import Logo from './Logo'
 const Contact = () => {
   return (
     <section className='w-full h-screen bg-black flex justify-center items-center' id='Contact'>
-        <div className='w-[70%] h-[90%] md:h-[50%]  rounded-xl flex flex-col md:flex-row justify-around items-center'>
+        <div className='w-[80%] h-[90%] md:h-[50%]  rounded-xl flex flex-col md:flex-row justify-around items-center'>
          <div className=' flex flex-col justify-center items-start h-fit gap-5 w-full'>
             <Logo/>
             <div className='flex flex-col justify-start w-full md:w-1/3 h-fit text-white font-mono '>
