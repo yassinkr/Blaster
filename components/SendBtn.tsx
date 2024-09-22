@@ -19,7 +19,7 @@ const SendBtn = () => {
                 className={animate} 
                 onAnimationEnd={handleAnimationEnd} // Listen for animation end
             >
-                <img src='/sent.svg' alt="Sent Icon" />
+                <img src='./sent.svg' alt="Sent Icon" />
             </div>
         </button>
     );
