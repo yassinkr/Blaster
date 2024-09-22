@@ -5,7 +5,7 @@ import { Button } from './ui/button'
 
 const Header = () => {
   return (
-    <header className='w-full h-fit flex justify-around items-end bg-white fixed top-0'>
+    <header className='w-full h-fit flex justify-around items-end bg-white top-0'>
      <Logo/>
      <Nav/>
      <Button className='mb-3'>

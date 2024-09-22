@@ -24,7 +24,7 @@ const Games = () => {
     ]
   return (
     <section className='w-full h-screen bg-black flex justify-center items-center' id='Games'>
-      <div className='w-[80%] h-[70%] grid-parent'>
+      <div className='w-[80%] h-[90%] grid-parent'>
 
       {mockdata.map((category,index)=>
      <div className={`w-full h-1/3 relative `}  key={index}>

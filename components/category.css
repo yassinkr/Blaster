@@ -114,5 +114,27 @@
   }
       
 
+  @media screen and (max-width: 840px) {
+    .grid-parent {
+      display: grid;
+      grid-template-rows: 12,5% 25% , 25% , 25% , 12,5%; /* Creates 1 equal column */
+     
+    }
+    
+/* Target child elements inside the grid parent */
+.grid-parent > *:nth-child(1) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.grid-parent > *:nth-child(2) {
+  grid-column: 1;
+  grid-row: 3;
+}
 
+.grid-parent > *:nth-child(3) {
+  grid-column: 1;
+  grid-row: 4;
+}
 
+  }
+  

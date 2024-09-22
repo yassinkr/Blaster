@@ -7,7 +7,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div  className="h-screen  grid grid-rows[auto,1fr] ">
+    <div  className="h-fit grid grid-rows[auto,1fr,1fr,1fr,1fr]">
+
      <Header/>
      <Hero/>
      <Games/>
